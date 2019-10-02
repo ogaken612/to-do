@@ -47,6 +47,7 @@
 </form>
 <br>
 <div th:if="${taskForm.isNewTask}" style="margin:10px">
+</div>
 <h3>To Do List</h3>
 <table class="table table-hover">
     <thead>
@@ -75,7 +76,6 @@
 	</tr>
 	</tbody>
 </table>
-</div>
 <br>
 <p th:unless="${taskForm.isNewTask}"><a class="btn btn-dark" th:href="@{/task}">戻る</a></p>
 </div>
